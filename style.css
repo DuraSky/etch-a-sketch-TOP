@@ -1,0 +1,23 @@
+body{
+    display: flex;
+}
+
+#canvas{
+    display: flex;
+    flex-wrap: wrap;
+    border: dotted;
+    width: 515px;
+    height: 540px;
+    margin: 0 auto;
+}
+
+.canvasSquare{
+    border: solid;
+    border-width: thin;
+    width: 30px;
+    height: 30px;
+}
+
+/* .canvasSquare:hover{
+    background-color: black;
+} */
