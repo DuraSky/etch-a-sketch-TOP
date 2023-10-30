@@ -4,20 +4,29 @@ body{
 
 #canvas{
     display: flex;
-    flex-wrap: wrap;
     border: dotted;
-    width: 515px;
-    height: 540px;
+    width: 960px;
+    height: 960px;
     margin: 0 auto;
+    flex-shrink: 0;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    
+
 }
 
 .canvasSquare{
+    margin: 0;
+    padding: 0;
     border: solid;
-    border-width: thin;
-    width: 30px;
+    border-width: thin;     
     height: 30px;
+    width: 30px;  
 }
 
-/* .canvasSquare:hover{
-    background-color: black;
-} */
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
