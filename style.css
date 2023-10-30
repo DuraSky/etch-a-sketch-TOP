@@ -5,8 +5,8 @@ body{
 #canvas{
     display: flex;
     border: dotted;
-    width: 960px;
-    height: 960px;
+    /* width: 960px;
+    height: 960px; */
     margin: 0 auto;
     flex-shrink: 0;
     align-content: flex-start;
@@ -20,8 +20,8 @@ body{
     padding: 0;
     border: solid;
     border-width: thin;     
-    height: 30px;
-    width: 30px;  
+    height: 20px;
+    width: 20px;  
 }
 
 .row{
