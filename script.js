@@ -1,7 +1,7 @@
 let size = 16;
 let squareSize = (760 / size) - 2;
 let squareSizeInPx = squareSize + "px";
-console.log(squareSizeInPx);
+
 
 const canvas = document.querySelector("#canvas");
 
@@ -16,8 +16,15 @@ for (let i = 0; i < size; i++){
       square.style.height = squareSizeInPx;
       row.appendChild(square); 
 
-      square.addEventListener("mouseover", () => {
-      square.style.backgroundColor = "black";
+      square.addEventListener("mouseover", () => {     
+      function randomColour(){
+         let x = Math.floor(Math.random() * 256);
+         let y = Math.floor(Math.random() * 256);
+         let z = Math.floor(Math.random() * 256);
+         let color = "rgb(" + x + "," + y + "," + z + ")";
+         return color;        
+         }
+        square.style.backgroundColor = randomColour();
       }); 
    } 
    canvas.appendChild(row); 
@@ -52,7 +59,14 @@ button.addEventListener("click", () => {
          row.appendChild(square); 
    
          square.addEventListener("mouseover", () => {
-         square.style.backgroundColor = "black";
+            function randomColour(){
+               let x = Math.floor(Math.random() * 256);
+               let y = Math.floor(Math.random() * 256);
+               let z = Math.floor(Math.random() * 256);
+               let color = "rgb(" + x + "," + y + "," + z + ")";
+               return color;        
+               }
+              square.style.backgroundColor = randomColour();
          }); 
       } 
       canvas.appendChild(row); 
